@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700');
 @import "colors.scss";
+@import "home.scss";
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    border: 0 none;
+}
 
-*{
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  outline: none;
-  font-family: "Roboto", sans-serif;
+html, body, #root{
+    height: 100%;
 }
-body{
-  background: $COLOR_BEIGE;
+
+body {
+    background: $COLOR_BEIGE;
 }
-#app{
-  margin: 0 auto;
-  max-width: 1200px;
+
+#root {
+    margin: 0 auto;
+    max-width: 1200px;
 }

@@ -6,15 +6,11 @@ import {routes} from '../routes'
 class App extends Component {
     render() {
         return (
-            <div id="app">
-                <HashRouter>
-                    <div>
-                        <Switch>
-                            {routes.map((route, i) => (<Route key={i} {...route}/>))}
-                        </Switch>
-                    </div>
-                </HashRouter>
-            </div>
+            <HashRouter>
+                <Switch>
+                    {routes.map((route, i) => (<Route key={i} {...route}/>))}
+                </Switch>
+            </HashRouter>
         );
     }
 }

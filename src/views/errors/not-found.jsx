@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import {HashRouter, Route, Switch} from 'react-router-dom'
 
 class PageNotFound extends Component {
     render() {
