@@ -1,14 +1,69 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700");
+#page-user .info, #page-user .bio, #page-user .repos {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #F1E0B1;
+  padding: 15px;
+  margin-bottom: 15px; }
+
+#page-user .info {
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: row; }
+
+#page-user .info .avatar {
+  flex-basis: 100px;
+  width: 100px;
+  padding-right: 15px; }
+
+#page-user .info .avatar img {
+  max-width: 100%;
+  border-radius: 5px;
+  border: 1px solid #444; }
+
+#page-user .info .name {
+  flex-grow: 1; }
+
+#page-user .repos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+#page-user .repos h2 {
+  flex-basis: 100%; }
+
+#page-user .repos .repo-item {
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #777;
+  flex-basis: 250px;
+  flex-grow: 1;
+  max-width: 28%;
+  background: rgba(255, 255, 255, 0.3); }
+
 * {
-  padding: 0;
-  margin: 0;
   text-decoration: none;
   outline: none;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  border: 0 none;
+  font-weight: normal; }
+
+html, body, #root {
+  height: 100%;
+  padding: 0;
+  margin: 0; }
 
 body {
-  background: #F1E0B1; }
+  background: #7DBEA5;
+  color: #444;
+  font-size: 13px; }
 
-#app {
+#root {
   margin: 0 auto;
-  max-width: 1200px; }
+  max-width: 1000px; }
+
+h2 {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #777; }

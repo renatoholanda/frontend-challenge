@@ -1,11 +1,13 @@
 import React, {Component} from 'react'
-import {HashRouter, Route, Switch} from 'react-router-dom'
+import SearchArea from './search-area'
 
 class PageHome extends Component {
     render() {
         return (
             <div id="page-home">
-                Home
+                <div className="container">
+                    <SearchArea history={this.props.history} />
+                </div>
             </div>
         );
     }

@@ -1,0 +1,45 @@
+#page-user{
+    .info, .bio, .repos{
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        border-radius: 5px;
+        background: $COLOR_BEIGE;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    .info{
+        border-radius: 0 0 5px 5px;
+        display: flex;
+        flex-direction: row;
+        .avatar{
+            flex-basis: 100px;
+            width: 100px;
+            padding-right: 15px;
+            img{
+                max-width: 100%;
+                border-radius: 5px;
+                border: 1px solid $COLOR_GRAY;
+            }
+        }
+        .name{
+            flex-grow: 1;
+        }
+    }
+    .repos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        h2{
+            flex-basis: 100%;
+        }
+        .repo-item{
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid $COLOR_LIGHT_GRAY;
+            flex-basis: 250px;
+            flex-grow: 1;
+            max-width: 28%;
+            background: rgba(255,255,255,0.3);
+        }
+    }
+}
