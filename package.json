@@ -1,10 +1,6 @@
 {
   "name": "petnativa-frontend-challenge",
   "version": "0.1.0",
-  "engines": {
-    "node": "6.10.3",
-    "npm": "3.10.10"
-  },
   "private": true,
   "dependencies": {
     "node-sass-chokidar": "0.0.3",
@@ -12,7 +8,13 @@
     "react-dom": "^16.1.1"
   },
   "devDependencies": {
-    "react-scripts": "1.0.17"
+    "npm-run-all": "^4.1.2",
+    "react-code-splitting": "^1.2.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0"
   },
   "scripts": {
     "build-css": "node-sass src/ -o src/",
@@ -20,7 +22,6 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
-    "postinstall": "npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
