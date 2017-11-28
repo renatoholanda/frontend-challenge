@@ -26,7 +26,7 @@ class SearchArea extends Component {
             <div id="search-area">
                 <div ref="searcharea" className="container">
                     <input ref="username" type="text" className="txt-rounded" placeholder="Username" onKeyUp={this.onKeyUp.bind(this)} />
-                    <button className="btn-search" onClick={this.onClickSearch.bind(this)}>
+                    <button className="btn btn-large btn-search" onClick={this.onClickSearch.bind(this)}>
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </button>
                 </div>

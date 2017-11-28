@@ -18,15 +18,11 @@ $SIZE_1: 50;
             padding: 0 20px;
             font-size: 20px;
             transition: width 1s, padding 1s;
-            background: $COLOR_BLUE_3;
+            background: $COLOR_BLUE_2;
         }
         .btn-search{
-            background: $COLOR_BLUE_3;
-            color: $COLOR_WHITE;
-            border-radius: 35px;
             font-size: 20px;
             width: 70px;        
-            height: 70px;
             box-sizing: border-box;
             margin-left: -70px;
             cursor: pointer;

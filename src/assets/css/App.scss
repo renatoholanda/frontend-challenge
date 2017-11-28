@@ -34,7 +34,20 @@ body {
 h2{
     padding: 0;
     margin: 0;
-    border-bottom: 1px solid $COLOR_LIGHT_GRAY;
+    text-align: center;
+}
+
+.btn{
+    background: $COLOR_BLUE_2;
+    color: $COLOR_WHITE;
+    border-radius: 25px;
+    height: 50px;
+    color: $COLOR_BLUE_4;
+}
+
+.btn-large{
+    border-radius: 35px;
+    height: 70px;
 }
 
 @import "home.scss";

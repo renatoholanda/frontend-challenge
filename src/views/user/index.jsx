@@ -16,8 +16,6 @@ class PageUser extends Component {
     render() {
         let user = this.props.user;
 
-        console.log(user.repos);
-
         return (
             <div id="page-user">
                 <div className="info">
@@ -27,8 +25,7 @@ class PageUser extends Component {
                     <div className="name">
                         <h2>{user.name}</h2>
                         <p>{user.email}</p>
-                        <p>Seguidores: {user.followers}</p>
-                        <p>Seguindo: {user.following}</p>
+                        <p>{user.followers} followers | {user.following} following</p>
                     </div>
                 </div>
                 <div className="bio">
@@ -36,21 +33,23 @@ class PageUser extends Component {
                     <p>{user.bio || "Não há informações"}</p>
                 </div>
                 <div className="repos">
-                    <h2>Repositórios:</h2>
+                    <h2>Repositories</h2>
                     {user.repos && user.repos.map((r, key) => 
-                        <Link to={`/repos/${r.full_name}`} className="repo-item" key={key}>
+                        <a href={r.html_url} className="repo-item" key={key} target="_blank" rel="nofollow">
                             <div>
                                 <h2>
                                     {r.name}
-                                    {r.language && <small>{r.language}</small>}
                                 </h2>
-                                <p>{r.description}</p>
+                                <p>
+                                    {r.description}
+                                </p>
+                                {r.language && <span className="language">{r.language}</span>}
                             </div>
-                        </Link>
+                        </a>
                     )}
                 </div>
-                <div>
-                    <Link to="/">Nova Busca</Link>
+                <div className="search">
+                    <Link className="btn" to="/">Nova Busca</Link>
                 </div>
             </div>
         );
