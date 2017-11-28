@@ -3,6 +3,14 @@ import {connect} from 'react-redux'
 
 
 class SearchArea extends Component {
+    constructor(props){
+        super(props);
+
+        this.state = {
+            searchOpened: false
+        }
+    }
+
     onKeyUp(ev){
         if(ev.keyCode === 13 || ev.keyCode === 176){
             this.onSubmit(ev.target.value);
@@ -17,8 +25,13 @@ class SearchArea extends Component {
 
     onClickSearch(){
         let {searcharea, username} = this.refs;
-        searcharea.className += " open";
-        username.focus();
+        if(!!!this.state.searchOpened){
+            searcharea.className += " open";
+            username.focus();
+            this.setState({searchOpened: true});
+        } else {
+            this.onSubmit(username.value);
+        }
     }
 
     render() {

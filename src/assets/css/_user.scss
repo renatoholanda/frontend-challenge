@@ -49,11 +49,10 @@
             margin: 10px;
             padding: 15px;
             box-shadow: 0 0 10px $COLOR_BLUE_4;
-            flex-basis: 25%;
-            flex-grow: 1;
-            max-width: 27%;
+            flex: 1 0 25%;
             transition: background-color 0.5s, box-shadow 0.5s;
             color: $COLOR_BLUE_2;
+            word-break: break-all;
             h2{
                 text-align: left;
                 color: $COLOR_WHITE;
@@ -81,6 +80,17 @@
             line-height: 50px;
             font-size: 16px;
             text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #page-user{
+        .repos{
+            .repo-item{
+                flex-basis: 100%;
+                max-width: 100%;
+            }
         }
     }
 }

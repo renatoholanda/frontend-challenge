@@ -2461,11 +2461,10 @@ h2 {
   margin: 10px;
   padding: 15px;
   box-shadow: 0 0 10px #193441;
-  flex-basis: 25%;
-  flex-grow: 1;
-  max-width: 27%;
+  flex: 1 0 25%;
   transition: background-color 0.5s, box-shadow 0.5s;
-  color: #91AAB4; }
+  color: #91AAB4;
+  word-break: break-all; }
 
 #page-user .repos .repo-item h2 {
   text-align: left;
@@ -2493,3 +2492,8 @@ h2 {
   line-height: 50px;
   font-size: 16px;
   text-align: center; }
+
+@media screen and (max-width: 500px) {
+  #page-user .repos .repo-item {
+    flex-basis: 100%;
+    max-width: 100%; } }
