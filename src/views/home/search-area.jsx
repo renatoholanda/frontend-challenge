@@ -15,10 +15,21 @@ class SearchArea extends Component {
         history.push(`/user/${username}`);
     }
 
+    onClickSearch(){
+        let {searcharea, username} = this.refs;
+        searcharea.className += " open";
+        username.focus();
+    }
+
     render() {
         return (
-            <div className="search-area">
-                <input type="text" placeholder="Username" onKeyUp={this.onKeyUp.bind(this)} />
+            <div id="search-area">
+                <div ref="searcharea" className="container">
+                    <input ref="username" type="text" className="txt-rounded" placeholder="Username" onKeyUp={this.onKeyUp.bind(this)} />
+                    <button className="btn-search" onClick={this.onClickSearch.bind(this)}>
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
             </div>
         );
     }

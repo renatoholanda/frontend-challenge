@@ -4,9 +4,10 @@
     flex-wrap: wrap;
     .info, .bio, .repos{
         flex-grow: 1;
-        box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        border-radius: 5px;
-        background: $COLOR_WHITE;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        background: $COLOR_BLUE_3;
+        color: $COLOR_WHITE;
         padding: 15px;
         margin: 15px;
     }

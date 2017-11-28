@@ -1,2 +1,45 @@
+$SIZE_1: 50;
+
 #page-home {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #search-area{
+        display: inline-block;
+        .txt-rounded, .btn-search{
+            vertical-align: top;
+        }
+        .txt-rounded{
+            width: 70px;
+            height: 70px;
+            border-radius: 35px;
+            box-sizing: border-box;
+            padding: 0 20px;
+            font-size: 20px;
+            transition: width 1s, padding 1s;
+            background: $COLOR_BLUE_3;
+        }
+        .btn-search{
+            background: $COLOR_BLUE_3;
+            color: $COLOR_WHITE;
+            border-radius: 35px;
+            font-size: 20px;
+            width: 70px;        
+            height: 70px;
+            box-sizing: border-box;
+            margin-left: -70px;
+            cursor: pointer;
+        }
+        .open{
+            .txt-rounded{
+                background: $COLOR_WHITE;
+                width: 300px;
+                padding-right: 70px;
+            }
+            .btn-search{
+                margin-left: -69px;
+            }
+        }
+    }
 }

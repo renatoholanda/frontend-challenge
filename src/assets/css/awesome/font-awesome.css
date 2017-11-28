@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700");
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -47,9 +46,8 @@
   padding-left: 0;
   margin-left: 2.14286em;
   list-style-type: none; }
-
-.fa-ul > li {
-  position: relative; }
+  .fa-ul > li {
+    position: relative; }
 
 .fa-li {
   position: absolute;
@@ -57,9 +55,8 @@
   width: 2.14286em;
   top: 0.14286em;
   text-align: center; }
-
-.fa-li.fa-lg {
-  left: -1.85714em; }
+  .fa-li.fa-lg {
+    left: -1.85714em; }
 
 .fa-border {
   padding: .2em .25em .15em;
@@ -2330,141 +2327,3 @@
   margin: 0;
   overflow: visible;
   clip: auto; }
-
-* {
-  text-decoration: none;
-  outline: none;
-  font-family: "Roboto", sans-serif;
-  border: 0 none;
-  font-weight: normal; }
-
-html, body, #root {
-  height: 100%;
-  padding: 0;
-  margin: 0; }
-
-a {
-  color: inherit; }
-
-body {
-  background: #193441;
-  color: #444;
-  font-size: 13px; }
-
-#root {
-  margin: 0 auto;
-  max-width: 900px; }
-
-h2 {
-  padding: 0;
-  margin: 0;
-  border-bottom: 1px solid #777; }
-
-#page-home {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-#page-home #search-area {
-  display: inline-block; }
-
-#page-home #search-area .txt-rounded, #page-home #search-area .btn-search {
-  vertical-align: top; }
-
-#page-home #search-area .txt-rounded {
-  width: 70px;
-  height: 70px;
-  border-radius: 35px;
-  box-sizing: border-box;
-  padding: 0 20px;
-  font-size: 20px;
-  transition: width 1s, padding 1s;
-  background: #3E606F; }
-
-#page-home #search-area .btn-search {
-  background: #3E606F;
-  color: #FCFFF5;
-  border-radius: 35px;
-  font-size: 20px;
-  width: 70px;
-  height: 70px;
-  box-sizing: border-box;
-  margin-left: -70px;
-  cursor: pointer; }
-
-#page-home #search-area .open .txt-rounded {
-  background: #FCFFF5;
-  width: 300px;
-  padding-right: 70px; }
-
-#page-home #search-area .open .btn-search {
-  margin-left: -69px; }
-
-#page-user {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-#page-user .info, #page-user .bio, #page-user .repos {
-  flex-grow: 1;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  background: #3E606F;
-  color: #FCFFF5;
-  padding: 15px;
-  margin: 15px; }
-
-#page-user .info {
-  flex-basis: 30%;
-  display: flex;
-  flex-direction: row; }
-
-#page-user .info .avatar {
-  flex-basis: 100px;
-  width: 100px;
-  padding-right: 15px; }
-
-#page-user .info .avatar img {
-  max-width: 100%;
-  border-radius: 5px;
-  border: 1px solid #444; }
-
-#page-user .info .name {
-  flex-grow: 1; }
-
-#page-user .bio {
-  flex-basis: 50%; }
-
-#page-user .repos {
-  flex-basis: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-#page-user .repos > h2 {
-  flex-basis: 100%; }
-
-#page-user .repos .repo-item {
-  display: block;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 15px;
-  border: 1px solid #777;
-  flex-basis: 25%;
-  flex-grow: 1;
-  max-width: 27%;
-  background: rgba(255, 255, 255, 0.3); }
-
-#page-user .repos .repo-item h2 small {
-  display: inline-block;
-  padding: 3px;
-  border-radius: 3px;
-  border: 1px solid #777;
-  font-size: 11px;
-  margin: 0 0 3px 5px;
-  background: #3E606F;
-  color: #FCFFF5; }
-
-#page-user .repos .repo-item:hover {
-  background: #f0f0f0f0; }

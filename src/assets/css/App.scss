@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700');
 @import "colors.scss";
+@import "./awesome/font-awesome.scss";
 
 * {
     text-decoration: none;
@@ -20,7 +21,7 @@ a{
 }
 
 body {
-    background: $COLOR_BLUE_1;
+    background: $COLOR_BLUE_4;
     color: $COLOR_GRAY;
     font-size: 13px;
 }
