@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700');
 @import "colors.scss";
-@import "home.scss";
-@import "user.scss";
+
 * {
     text-decoration: none;
     outline: none;
@@ -16,15 +15,19 @@ html, body, #root{
     margin: 0;
 }
 
+a{
+    color: inherit;
+}
+
 body {
-    background: $COLOR_GREEN;
+    background: $COLOR_BLUE_1;
     color: $COLOR_GRAY;
     font-size: 13px;
 }
 
 #root {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 h2{
@@ -32,3 +35,6 @@ h2{
     margin: 0;
     border-bottom: 1px solid $COLOR_LIGHT_GRAY;
 }
+
+@import "home.scss";
+@import "user.scss";

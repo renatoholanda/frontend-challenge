@@ -16,6 +16,8 @@ class PageUser extends Component {
     render() {
         let user = this.props.user;
 
+        console.log(user.repos);
+
         return (
             <div id="page-user">
                 <div className="info">
@@ -36,9 +38,15 @@ class PageUser extends Component {
                 <div className="repos">
                     <h2>Repositórios:</h2>
                     {user.repos && user.repos.map((r, key) => 
-                        <div className="repo-item" key={key}>
-                            <Link to={`/repos/${r.full_name}`}>{r.name}</Link>
-                        </div>
+                        <Link to={`/repos/${r.full_name}`} className="repo-item" key={key}>
+                            <div>
+                                <h2>
+                                    {r.name}
+                                    {r.language && <small>{r.language}</small>}
+                                </h2>
+                                <p>{r.description}</p>
+                            </div>
+                        </Link>
                     )}
                 </div>
                 <div>
